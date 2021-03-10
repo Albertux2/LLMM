@@ -64,19 +64,22 @@
 	justify-content: center;
 	display:flex;
 	padding: 15px;
+	overflow: hidden;
 }
-.rightSideBar{
+.leftSideBar{
+	display:inline-block;
 	flex-grow:1;
 	border-style: double;
-	height: 80vh;
+	min-height: 80vh;
 	background-color:lightblue;
 	border-color: #3A3535;
 	border-width: 7px;	
 	border-radius: 10%;
+	white-space: nowrap;
 }
 
 
-.rightSideBar .insideText{
+.leftSideBar .insideText{
 	font-family: 'Anton', sans-serif;
 	color:#245254;
 	font-weight: bold;
@@ -84,26 +87,191 @@
 	text-decoration: none;
 
 }
-.rightSideBar .insideImg{
+.leftSideBar .insideImg{
 	padding: 15px;
 	width: 20px;
 	height: 20px;
 }
 
 .contentZone{
+	border-color: #3A3535;
+	border-width: 7px;	
+	border-radius: 10%;
+	border-style: double;
+	background-color: beige;
 	flex-grow: 5;
+	max-width: 50vw;
+	min-width: 50vw;
 	height:80vh;
-}
-.leftSideBar{
-	height:80vh;
-	flex-grow: 1;
+	overflow: wrap;
+	overflow-x: hidden;
 }
 
+.contentZone::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.contentZone::-webkit-scrollbar
+{
+	width: 5px;
+}
+
+.contentZone::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+.contentZone .insideText{
+	font-family: 'Anton', sans-serif;
+	color: #523328;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 15px;
+	letter-spacing: 0.7px;
+}
+
+.contentZone .tweet{
+	padding: 10px;
+}
+.contentZone .contentImg{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+.contentZone .imgContainer{
+	margin:0 auto;
+	text-align: center;
+}
+
+.contentZone .insideImg{
+	width: 45px;
+	height: 45px;
+	
+	float: left;
+}
+
+.rightSideBar{
+	flex-grow:1;
+	border-style: double;
+	min-height: 80vh;
+	height: 80vh;
+	background-color:lightblue;
+	border-color: #3A3535;
+	border-width: 7px;	
+	border-radius: 10%;
+	max-width: 20vw;
+}
+.rightSideBar .insideText{
+	font-size:10px;
+	font-family: 'Anton', sans-serif;
+	color:#245254;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+	text-decoration: none;
+	padding:15px;
+}
+.topPart{
+	min-height: 50%;
+	max-height: 50%;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+}
+.trend{
+	padding: 10px;
+	height: 50%;
+	width: 100%;
+	text-overflow: clip;
+}
+
+.trendingTitle{
+	font-size: 15px;
+	width: 65%;
+	text-overflow: wrap;
+	float:left;
+	word-wrap: break-word;
+}
+
+.trendImg{
+	width:50px;
+	height:40px;
+	float:none;
+}
+.rightSideBar ::-webkit-scrollbar{
+	width: 0;
+	background:transparent;
+}
+
+.bottomPart .insideImg{
+	padding: 5px;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	float:left;
+}
+
+.bottomPart{
+	min-height: 50%;
+	max-height: 50%;
+	overflow: scroll;
+}
+
+.account .overflowText{
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+
+.bottomBar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0;
+	max-height: 10vh;
+	min-height: 10vh;
+	background-color: #A9DDE3;
+}
+
+.bottomBar img{
+	width: 40px;
+	height: 40px;
+	margin-left: 15px;
+}
+.bottomBar p{
+	font-family: 'Kristi', cursive;
+	font-size:35px;
+}
+.bottomShadow{
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 -12px 12px -12px rgba(0, 0, 0, 0.5);
+
+}
+
+
+img[src=""]{
+	display: none;
+}
 @media only screen and (max-width: 600px) {
   	.webContainer{
   		flex-direction: column;
   	}
+  	.contentZone{
+  		max-width: none;
+  	}
+   	.leftSideBar{
+  		max-width: none;
+  	}
+   	.rightSideBar{
+  		max-width: none;
+  	}
 }
+
 
 @keyframes rotation{
 	from{
