@@ -1,1 +1,3 @@
-qwofjd
+document.addEventListener('DOMContentLoaded',function(){
+	
+});
