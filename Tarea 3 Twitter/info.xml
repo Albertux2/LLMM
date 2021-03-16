@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentList>
+<tweet-list>
+		<tweet>
+			<profPic>https://i.pinimg.com/originals/09/50/71/0950719b2f0f03d329e89404fcf3b7b3.jpg</profPic>
+			<name>Pepitox20112</name>
+			<at>Pepe20112</at>
+			<text>No me gusta twitter prefiero tuenti</text>
+			<img>https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_Tuenti_nuevo.png</img>
+		</tweet>
+		<tweet>
+			<profPic>https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png</profPic>
+			<name>Luis Hernandez</name>
+			<at>LuisHernan1992</at>
+			<text>En las noches claras,resuelvo el problema de la soledad del ser.Invito a la luna y con mi sombra somos tres.</text>
+			<img>https://1.bp.blogspot.com/-ow7CxXaQrfo/XJKRoQ743RI/AAAAAAAABxY/QMJXaFVFvWQv89z6fKwo1EN0KVt_eSZnACLcBGAs/s1600/super_luna1.jpg</img>
+		</tweet>
+		<tweet>
+			<profPic>https://i.pinimg.com/originals/7d/1a/3f/7d1a3f77eee9f34782c6f88e97a6c888.jpg</profPic>
+			<name>xXx_D4rkL0rD_xXx</name>
+			<at>darklorddddXxX</at>
+			<text>Me aburrooooooooooooooooooooooooooo</text>
+			<img></img>
+		</tweet>
+</tweet-list>
+<follow-list>
+	<follow>
+		<img>https://i.pinimg.com/474x/bb/0b/d0/bb0bd0e0477fadc41393c7f64571e321.jpg</img>
+		<name>Yomi👉👈</name>
+		<at>Yomiuwu</at>
+	</follow>
+	<follow>
+		<img>https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png</img>
+		<name>Brock</name>
+		<at>JustBrock</at>
+	</follow>
+	<follow>
+		<img>https://i.ytimg.com/vi/wJXHCPViDg0/maxresdefault.jpg</img>
+		<name>Willy</name>
+		<at>WillyRiendose</at>
+	</follow>
+</follow-list>
+<trend-list>
+	<trend>
+		<title>El robo de obras de arte llega al mundo digital, robo valorado en miles de dolares</title>
+		<img>https://i.blogs.es/b8be10/screenshot/1366_2000.jpg</img>
+	</trend>
+	<trend>
+		<title>SkyRojo, nueva serie en netflix</title>
+		<img>https://i.blogs.es/2c22f9/sky-rojo/500_333.jpeg</img>
+	</trend>
+	<trend>
+		<title>Descubren el origen de la nube de polvo de 1800KM en marte</title>
+		<img>https://i.blogs.es/23f6bc/1366_2000-2/500_333.jpg</img>
+	</trend>
+	<trend>
+		<title>Más paises se unen a la paralizacion de la vacuna AstraZeneca</title>
+		<img>https://i.blogs.es/d130ed/oxford_astrazeneca_covid-19_vaccine_-2021-_i/500_333.jpg</img>
+	</trend>
+</trend-list>
+</contentList>

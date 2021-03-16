@@ -41,9 +41,8 @@
 }
 .labelUpload:hover{
 	cursor: pointer; 
-	border:solid 1px;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgba(31,61,210,1) 0%, rgba(35,177,134,1) 100%);
+	background: radial-gradient(circle, lightblue 25%, #242121 75%);
 }
 
 .topShadow{
@@ -138,12 +137,13 @@
 	background-color: #D62929;
 }
 
-.contentZone .insideText{
+.tweet .insideText{
 	font-family: 'Anton', sans-serif;
 	color: #523328;
 	font-weight: bold;
 	font-size: 12px;
-	padding: 15px;
+	margin-top:25px;
+	margin-left: 5px;
 	letter-spacing: 0.7px;
 }
 
@@ -164,6 +164,8 @@
 .contentZone .insideImg{
 	width: 45px;
 	height: 45px;
+	border-radius: 50%;
+	padding:0 8px;
 	float: left;
 }
 
@@ -231,7 +233,7 @@
 	display:flex;
 }
 .info{
-	width: 50%;
+	width: 40%;
 }
 
 .account .overflowText{
@@ -267,7 +269,12 @@
 }
 
 
-
+.separator{
+	margin: 0 25%;
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px 
+}
 img[src=""]{
 	display: none;
 }
