@@ -74,8 +74,8 @@
 .leftSideBar{
 	flex-grow:0.7;
 	border-style: double;
-	min-height: 80vh;
-	height: 80vh;
+	min-height: 75.9vh;
+	height: 75.9vh;
 	background-color:lightblue;
 	border-color: #3A3535;
 	border-width: 7px;	
@@ -113,7 +113,7 @@
 	flex-grow: 5;
 	max-width: 50vw;
 	min-width: 50vw;
-	height:80vh;
+	height: 75.9vh;
 	overflow: wrap;
 	overflow-x: hidden;
 }
@@ -172,8 +172,8 @@
 .rightSideBar{
 	flex-grow:1;
 	border-style: double;
-	min-height: 80vh;
-	height: 80vh;
+	min-height: 75.9vh;
+	height: 75.9vh;
 	background-color:lightblue;
 	border-color: #3A3535;
 	border-width: 7px;	
