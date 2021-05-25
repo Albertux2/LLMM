@@ -41,7 +41,7 @@ function loadRaces(){
 			p.onclick = function(){deployClass(this.id)};
 			p.classList.add("races")
 			p.innerHTML=`
-				<img class="racesIcon" src="img/races/${race.name}.png">
+				<img class="racesIcon" src="img/races/${race.name.toLowerCase}.png">
 				<h2>${race.name}</h2>
 			`
 			racesContainer.appendChild(p)
@@ -63,7 +63,7 @@ function deployRaces(id){
 		<div class="classData">
 			<div class="classText" id="classText"></div>
 
-			<div id="classImgDiv"><img class="classImg" src="img/races/${name}.png"</div>
+			<div id="classImgDiv"><img class="classImg" src="img/races/${name.toLowerCase}.png"</div>
 		</div>
 	</div>`
 	addRaceData()
@@ -118,7 +118,7 @@ fetchJSON(`${url}${endpoint}/${name.toLowerCase()}`).then(json => {
 			// p.onclick = function(){deployClass(this.id)};
 			p.classList.add("class")
 			p.innerHTML=`
-				<img class="classIcon" src="img/classIcon/${results.name}.png">
+				<img class="classIcon" src="img/classIcon/${results.name.toLowerCase}.png">
 				<h2>${results.name}</h2>
 			`
 			classContainer.appendChild(p)
@@ -135,14 +135,14 @@ function deployClass(id){
 	classContainer.innerHTML=`
 	<div class="classInfo deployAnimation">
 		<div class="classHead">
-			<img class="classMiniIcon" src="img/classIcon/${name}.png">
+			<img class="classMiniIcon" src="img/classIcon/${name.toLowerCase}.png">
 			<h1>${json.name}</h1>
-			<img class="classMiniIcon" src="img/classIcon/${name}.png">
+			<img class="classMiniIcon" src="img/classIcon/${name.toLowerCase}.png">
 		</div>
 		<div class="classData">
 			<div class="classText" id="classText"></div>
 
-			<div id="classImgDiv"><img class="classImg" src="img/classes/${name}.png"</div>
+			<div id="classImgDiv"><img class="classImg" src="img/classes/${name.toLowerCase}.png"</div>
 		</div>
 	</div>
 	`
