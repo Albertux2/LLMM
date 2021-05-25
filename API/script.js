@@ -135,9 +135,9 @@ function deployClass(id){
 	classContainer.innerHTML=`
 	<div class="classInfo deployAnimation">
 		<div class="classHead">
-			<img class="classMiniIcon" src="img/classIcon/${name.toLowerCase}.png">
+			<img class="classMiniIcon" src="img/classIcon/${json.index}.png">
 			<h1>${json.name}</h1>
-			<img class="classMiniIcon" src="img/classIcon/${name.toLowerCase}.png">
+			<img class="classMiniIcon" src="img/classIcon/${json.index}.png">
 		</div>
 		<div class="classData">
 			<div class="classText" id="classText"></div>
