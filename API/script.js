@@ -41,7 +41,7 @@ function loadRaces(){
 			p.onclick = function(){deployClass(this.id)};
 			p.classList.add("races")
 			p.innerHTML=`
-				<img class="racesIcon" src="img/races/${race.name.toLowerCase}.png">
+				<img class="racesIcon" src="img/races/${race.index}.png">
 				<h2>${race.name}</h2>
 			`
 			racesContainer.appendChild(p)
@@ -118,7 +118,7 @@ fetchJSON(`${url}${endpoint}/${name.toLowerCase()}`).then(json => {
 			// p.onclick = function(){deployClass(this.id)};
 			p.classList.add("class")
 			p.innerHTML=`
-				<img class="classIcon" src="img/classIcon/${results.name.toLowerCase}.png">
+				<img class="classIcon" src="img/classIcon/${results.index}.png">
 				<h2>${results.name}</h2>
 			`
 			classContainer.appendChild(p)
