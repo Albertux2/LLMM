@@ -272,12 +272,13 @@ body{
 	.startButton{
 		width: 40%;
 	}
-	.racesContainer{
+	.racesContainer,.classContainer{
 		width: 100vw;
+		font-size: 12px;
 		height: 90vh;
 		flex-direction: column;
 	}
-	.races{
+	.races,.class{
 		margin:15px 0px;
 		height: 25%;
 	}
