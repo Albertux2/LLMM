@@ -142,7 +142,7 @@ function deployClass(id){
 		<div class="classData">
 			<div class="classText" id="classText"></div>
 
-			<div id="classImgDiv"><img class="classImg" src="img/classes/${name.toLowerCase}.png"</div>
+			<div id="classImgDiv"><img class="classImg" src="img/classes/${json.index}.png"</div>
 		</div>
 	</div>
 	`
