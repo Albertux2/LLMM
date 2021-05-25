@@ -1,0 +1,130 @@
+*{
+	padding: 0;
+	margin:0;
+	box-sizing: 0;
+	color:white;
+}
+.webContainer{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+.today{
+	width: 25%;
+	height: 100%;
+	background-color:#001F54 ;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+	.img-dia-actual{
+		width: 85%;
+		align-self: none;
+		height: auto;
+		margin: 10px,10px;
+	}
+	.temperatura-dia-actual{
+		font-size: 50px;
+		font-style: italic;
+	}
+.extraData{
+	width: 75%;
+	height: 100%;
+	background-color:#0A1128;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+}
+
+	.nextDays{
+		padding: 20px;
+		margin:10px;
+		width: 75%;
+		height: 30%;
+		justify-content: center;
+		align-items: center;
+		display:flex;
+	}
+		.nextDay{
+			display: flex;
+			margin: 0 10px; 
+			width: 27%;
+			height: 100%;
+			background-color: #1282A2; 
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			border-radius: 5.5%;
+		}
+			.img-pronostico{
+				width: 60%;
+				height: auto;
+				margin: 10px 10px;
+			}
+
+	.extraToday{
+		padding: 20px;
+		margin:20px;
+		width: 75%;
+		height: 50%;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+		.extras{
+			border-radius: 5.5%;
+			width: 45%;
+			margin: 10px;
+			background-color: #1282A2;
+			height: 75%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+			.extraText{
+			font-family: monospace;
+			font-style: italic; 
+			font-size: 250%;
+			font-weight: bold;
+			color:#001F54;
+			}
+
+
+
+
+
+
+
+
+@media(max-width: 700px){
+	.today{
+		width: 100vw;
+		height: 100%;
+	}
+	.webContainer{
+		flex-wrap: 	wrap;
+		width: auto;
+	}
+	.nextDays{
+		flex-wrap: wrap;
+	}
+	.nextDay{
+		margin: 10px 10px;
+		height: 50%;
+		width: 25%;
+	}
+	.extraData{
+		height: 200%;
+		width: 100%;
+	}
+	.extras{
+		height: 25%;
+		width: 100%;
+	}
+}
+
