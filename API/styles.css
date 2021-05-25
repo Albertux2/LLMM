@@ -291,4 +291,10 @@ body{
 	h2{
 		font-size: 90%;
 	}
+	#tripleList{
+		font-size: none;
+	}
+	.classHead{
+		padding:10px;
+	}
 }
