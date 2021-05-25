@@ -63,7 +63,7 @@ function deployRaces(id){
 		<div class="classData">
 			<div class="classText" id="classText"></div>
 
-			<div id="classImgDiv"><img class="classImg" src="img/races/${name.toLowerCase}.png"</div>
+			<div id="classImgDiv"><img class="classImg" src="img/races/${json.index}.png"</div>
 		</div>
 	</div>`
 	addRaceData()
