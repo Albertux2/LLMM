@@ -1,4 +1,6 @@
 let url = "https://www.dnd5eapi.co/api/"
+	//Uso una URL distinta para monstruos porque la original que usaba no tiene imagenes y esta tiene algunas que me facilita las cosas
+let urlMonstruos = "https://api.open5e.com/monsters/?ordering=-img_main"
 let endpoint="";
 let name = "";
 let classContainer = document.getElementById("classContainer")
@@ -9,6 +11,9 @@ if(page=="classes.html"){
 loadClasses()}
 else if (page=="races.html") {
 loadRaces()}
+else if (page=="monsters.html"){
+	getRandomMonster()
+}
 
 fetch(url)
 .then(response => response.json())
@@ -22,10 +27,10 @@ async function fetchJSON(url){
 function fixNavMobile(){
 	if (navigator.userAgent.match(/Mobile/)) {
 		document.getElementById("navLinks").innerHTML=`
-			<div class="links"><img class="navIcons" src="img/home.png"></div>
-			<div class="links"><img class="navIcons" src="img/class.png"></div>
-			<div class="links"><img class="navIcons" src="img/race.png"></div>
-			<div class="links"><img class="navIcons" src="img/skull.png"></div>
+			<div class="links"><img onclick="location.href='index.html'" class="navIcons" src="img/home.png"></div>
+			<div class="links"><img onclick="location.href='classes.html'" class="navIcons" src="img/class.png"></div>
+			<div class="links"><img onclick="location.href='races.html'" class="navIcons" src="img/race.png"></div>
+			<div class="links"><img onclick="location.href='monsters.html'" class="navIcons" src="img/skull.png"></div>
 		`
 	}
 }
@@ -202,3 +207,46 @@ function addBasicData(){
 
 	})
 }
+function numRandom(){
+	var num = Math.floor(Math.random() * 12)
+	return num;
+}
+
+function getRandomMonster(){
+	fetchJSON(urlMonstruos).then(json => {
+		var monster = json.results[numRandom()]
+		console.log(monster.img_main)
+		var dataPart = document.createElement("div")
+		dataPart.classList.add("monsterData")
+		var columnBasic = document.createElement("div")
+		columnBasic.innerHTML = `<ul> Monster information
+		<li>Name: ${monster.name}</li>
+		<li>Size: ${monster.size}</li>
+		<li>Monstruosity Type: ${monster.type}</li>
+		<li>Armor Class: ${monster.armor_class}</li>
+		<li>Hit points: ${monster.hit_points}</li>
+		<li>Speed: ${monster.speed.walk}</li>
+		<li>Challenge Rating: ${monster.challenge_rating}</li>
+		</ul>
+		`
+		var columnStats = document.createElement("div")
+		columnStats.id="statcol"
+		columnStats.innerHTML = `<ul>Monster Stats
+		<li>Strength: ${monster.strength}</li>
+		<li>Dexterity: ${monster.dexterity}</li>
+		<li>Intelligence: ${monster.intelligence}</li>
+		<li>Wisdom: ${monster.wisdom}</li>
+		<li>Charism: ${monster.charism}</li>
+		<li>Constitution: ${monster.constitution}</li>
+		</ul>
+		`
+		dataPart.appendChild(columnBasic)
+		dataPart.appendChild(columnStats)	
+		var imgPart = document.createElement("div")
+		imgPart.classList.add("imgPart")
+		imgPart.innerHTML=`<img class="monsterImg"src="${monster.img_main}">`
+		document.getElementById("monsterContainer").appendChild(dataPart)
+		document.getElementById("monsterContainer").appendChild(imgPart)
+	})
+}
+

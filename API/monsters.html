@@ -13,25 +13,23 @@
 <body>
 	<div class="webContainer">
 		<div class="navBar">
-			<img class="logo" src="img/logo.png">
+			<img class="logo" src="img/logo.png" onclick="location.href='index.html'">
 			<div class="linkContainer" id="navLinks">
 				<div class="links" onclick="location.href='index.html'"><a href="index.html">Home</a></div>
 				<div class="links" onclick="location.href='classes.html'"><a>Classes</a></div>
 				<div class="links" onclick="location.href='races.html'"><a>Races</a></div>
 				<div class="links" onclick="location.href='monsters.html'"><a>Generate enemy</a></div>
-			</div></div>
-		<div class="webContent"> 
-				<div class="startText">
-					<img id="d20" src="img/wd20.png">
-					<h1>Want to start playing D&D today?</h1>
-					<h2 id="start">Then choose your class and race and start living exciting adventures!</h2>
-					<h2 id="start"> Also try the monster generator for Dungeon Masters!</h2>
-					<div class="buttons">
-						<button class="startButton" onclick="location.href='classes.html'">Start playing!</button>
-						<button class="startButton" onclick="location.href='monsters.html'">Start DMing!</button>
-					</div>
+			</div>
+		</div>
+		<div class="webContent" id="background">
+			<div class="monsterContainer" id="monsterContainer">
+				<div class="classHead">
+					<img class="classMiniIcon" src="img/d20.png">
+					<h1>Monster Generator</h1>
+					<img class="classMiniIcon" src="img/d20.png">
 				</div>
 			</div>
 		</div>
+	</div>	
 </body>
 </html>
